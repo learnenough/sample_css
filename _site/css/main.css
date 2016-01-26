@@ -61,28 +61,8 @@ body {
   min-height: 100vh;
   margin-bottom: -180px;
 }
-
-.footer {
-  height: 150px;
-}
-.footer {
-  background-color: #000;
-  box-sizing: border-box;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  margin-top: -150px;
-  padding: 50px 0 20px;
-  text-align: center;
-}
-.footer img {
-  width: 35px;
-}
-.footer span {
-  color: #999;
-  font-size: inherit;
+.containerFooter {
+  padding-bottom: 200px;
 }
 
 
@@ -153,8 +133,7 @@ blockquote em {
   background-color: #000;
   display: block;
   height: 90px;
-  margin: -50px 0 0 -50px;
-  padding: 15px 0 0 30px;
+  margin: -30px 0 0 -20px;
   width: 75px;
 }
 .logo:hover img {
@@ -184,6 +163,29 @@ blockquote em {
 .headerMenu a:hover {
   color: #fff;
   background-color: rgba(0,0,0,0.2)
+}
+
+.footer {
+  height: 150px;
+}
+.footer {
+  background-color: #000;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-top: -150px;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+.footer img {
+  width: 35px;
+}
+.footer span {
+  color: #999;
+  font-size: inherit;
 }
 
 .hero {
@@ -291,6 +293,8 @@ blockquote em {
   margin-top: 40px;
 }
 
+
+
 .homeFounders h2 {
   padding-bottom: 20px;
   text-align: center;
@@ -332,4 +336,19 @@ blockquote em {
 .homeFounders a {
   font-size: inherit;
 }
+
+.page {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 980px;
+  padding: 160px 20px;
+}
+
+.page h1 {
+  font-size: 36px;
+  padding: 0 0 40px;
+  text-align: center;
+}
+
+
 
