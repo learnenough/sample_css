@@ -1,13 +1,13 @@
-html, body, div, span, applet, object, iframe,
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, 
-tbody, tfoot, thead, tr, th, td, article, aside, 
-canvas, details, embed, figure, figcaption, footer, 
-header, hgroup, menu, nav, output, ruby, section, 
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
 summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ summary, time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -42,7 +42,7 @@ em, i {
   font-style: italic;
 }
 a img {
-  border: none; 
+  border: none;
 }
 /* END RESET*/
 
@@ -54,11 +54,16 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: helvetica, arial, sans;
+  font-family: 'Open Sans', helvetica, sans;
   min-height: 100vh;
 }
 .site-container {
   flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
 }
 
 h1 {
@@ -77,6 +82,9 @@ h2 + p {
   margin: auto;
   max-width: 70%;
   text-align: center;
+}
+h3 {
+  font-size: 1.75em;
 }
 h4 {
   font-weight: bold;
@@ -218,6 +226,7 @@ p {
 }
 .hero-content h1 {
   color: rgba(255,255,255,0.8);
+  font-size: 7vw;
   margin-bottom: 0.25em;
 }
 .hero-content .social-link {
@@ -238,6 +247,15 @@ p {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
+.section-callout {
+  background-color: #000;
+  color: #fff;
+}
+.section-callout h2 {
+  color: inherit;
+}
+
 .social-list {
   list-style: none;
   padding: 0;
@@ -285,6 +303,8 @@ p {
   background-color: #ccc;
 }
 
+/* PAGE STYLES */
+
 .page {
   margin: 120px auto;
 }
@@ -296,13 +316,16 @@ p {
   clear: both;
   height: 0;
 }
+.page p ~ p {
+  padding-top: 0.75em;
+}
 .col-three {
   display: flex;
   min-height: 100%;
 }
 .col {
   box-sizing: border-box;
-  padding: 3em;
+  padding: 0 2em 2em;
 }
 .col-three .col ~ .col {
   border-left: 1px solid rgba(0,0,0,0.1);
@@ -314,7 +337,7 @@ p {
   flex: 1;
 }
 .col-three .col-aside {
-  flex: 0 0 15em
+  flex: 0 0 20em
 }
 
 .content {
@@ -333,6 +356,47 @@ p {
 }
 
 
+/* GALLERY STLYES */
+
+.gallery-thumbs img {
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.gallery-thumbs img:hover {
+  opacity: 1;
+}
+.photo-title,
+.photo-desc {
+  display: none;
+}
+.gallery-thumbs .current img {
+  border-color: #ed6e2f;
+  opacity: 1;
+}
+.gallery-photo {
+  position: relative;
+}
+.gallery-photo img {
+  width: 100%;
+}
+.gallery-photo img + img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.gallery-info {
+  font-size: 0.8rem;
+}
+.gallery-info h3 {
+  margin-bottom: 1em;
+}
+
+/* BLOG STYLES */
 
 .blog-index .col-aside {
   text-align: right;
@@ -430,6 +494,11 @@ p {
 .post-footer p {
   font-size: 0.8em;
 }
+
+
+
+
+
 
 @media (max-width: 800px) {
 html {
