@@ -76,10 +76,10 @@ h2 {
 h2 a {
   font: inherit
 }
-h2 + p {
+h2 ~ p {
   font-size: 0.8em;
   font-style: italic;
-  margin: auto;
+  margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
 }
@@ -95,6 +95,9 @@ a {
 }
 p {
   line-height: 1.5;
+}
+p ~ p {
+  margin-top: 0.75em;
 }
 
 /* HEADER STYLES */
@@ -315,9 +318,6 @@ p {
   content: " ";
   clear: both;
   height: 0;
-}
-.page p ~ p {
-  padding-top: 0.75em;
 }
 .col-three {
   display: flex;
