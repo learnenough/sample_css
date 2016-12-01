@@ -76,7 +76,7 @@ h2 {
 h2 a {
   font: inherit
 }
-h2 ~ p {
+h2 + p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
