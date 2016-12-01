@@ -79,7 +79,7 @@ h2 a {
 h2 + p {
   font-size: 0.8em;
   font-style: italic;
-  margin: auto;
+  margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
 }
@@ -96,11 +96,13 @@ a {
 p {
   line-height: 1.5;
 }
+p ~ p {
+  margin-top: 0.75em;
+}
 
 /* HEADER STYLES */
 .header {
   background-color: #000;
-  height: 30px;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -108,30 +110,31 @@ p {
 .header-logo {
   background-color: #000;
   box-sizing: border-box;
-  height: 110px;
+  display: block;
+  height: 10vh;
   left: -30px;
-  padding-top: 15px;
-  position: absolute;
+  padding-top: 10px;
+  position: relative;
   text-align: center;
   top: 0;
-  width: 110px;
+  width: 10vh;
 }
 .header-logo:hover {
   background-color: #ed6e2f;
 }
 .header-logo img {
-  width: 45px;
+  height: 80%;
 }
 .header-nav {
   float: right;
-  padding: 60px 100px 0 0;
+  padding: 5.5vh 60px 0 0;
 }
 .header-nav > li {
   display: inline-block;
   margin-left: 1em;
 }
 .header-nav a {
-  color: #000;
+  color: #fff;
 }
 .nav-links a {
   font-size: 0.8rem;
@@ -149,10 +152,10 @@ p {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a:hover {
-  color: #000;
+  color: #fff;
 }
 .header-nav > li ~ li {
-  border-left: 1px solid rgba(0,0,0,0.3);
+  border-left: 1px solid rgba(255,255,255,0.3);
   padding-left: 1em;
 }
 
@@ -306,7 +309,7 @@ p {
 /* PAGE STYLES */
 
 .page {
-  margin: 120px auto;
+  padding-top: 14vh;
 }
 .page:after {
   visibility: hidden;
@@ -316,17 +319,15 @@ p {
   clear: both;
   height: 0;
 }
-.page p ~ p {
-  padding-top: 0.75em;
-}
 .col-three {
   display: flex;
   min-height: 100%;
 }
 .col {
   box-sizing: border-box;
-  padding: 0 2em 2em;
+  padding: 2em;
 }
+
 .col-three .col ~ .col {
   border-left: 1px solid rgba(0,0,0,0.1);
 }
@@ -358,6 +359,9 @@ p {
 
 /* GALLERY STLYES */
 
+.gallery .col {
+  padding-top: 14vh;
+}
 .gallery-thumbs img {
   box-sizing: border-box;
   border: 5px solid transparent;
@@ -384,16 +388,20 @@ p {
 .gallery-photo img {
   width: 100%;
 }
-.gallery-photo img + img {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
 .gallery-info {
   font-size: 0.8rem;
 }
 .gallery-info h3 {
   margin-bottom: 1em;
+}
+.gallery-photo img + img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.gallery-thumbs {
+  height: 100vh;
+  overflow: scroll;
 }
 
 /* BLOG STYLES */
