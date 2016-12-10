@@ -327,17 +327,6 @@ p ~ p {
 
 /* PAGE STYLES */
 
-.page {
-  padding-top: 14vh;
-}
-.page:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 .col-three {
   display: flex;
   min-height: 100%;
@@ -359,12 +348,6 @@ p ~ p {
 .col-three .col-aside {
   flex: 0 1 20em
 }
-
-.content {
-  margin: auto;
-  max-width: 980px;
-  width: 85vw;
-}
 .col-two {
   display: flex;
 }
@@ -379,9 +362,6 @@ p ~ p {
 
 /* GALLERY STLYES */
 
-.gallery .col {
-  padding-top: 14vh;
-}
 .gallery-thumbs img {
   box-sizing: border-box;
   border: 5px solid transparent;
@@ -425,6 +405,12 @@ p ~ p {
 }
 
 /* BLOG STYLES */
+
+.page {
+  margin: auto;
+  max-width: 980px;
+  width: 85vw;
+}
 
 .blog-index .col-aside {
   text-align: right;
