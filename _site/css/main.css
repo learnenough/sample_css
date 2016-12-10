@@ -59,6 +59,7 @@ body {
 }
 .site-container {
   flex: 1;
+  padding-top: 10vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,10 +117,10 @@ p ~ p {
   padding-top: 10px;
   position: relative;
   text-align: center;
-  top: 0;
   width: 10vh;
 }
-.header-logo:hover {
+.header-logo:hover, 
+.header-logo:active {
   background-color: #ed6e2f;
 }
 .header-logo img {
@@ -145,9 +146,6 @@ p ~ p {
 .nav-links a:hover, .nav-links a:active  {
   color: #ed6e2f;
 }
-.logo:hover, .logo:active {
-  opacity: 0.5;
-}
 .header-nav > li:first-child a {
   color: #ed6e2f;
 }
@@ -159,7 +157,7 @@ p ~ p {
   padding-left: 1em;
 }
 
-/* HEADER STYLES */
+/* FOOTER STYLES */
 .footer {
   background-color: #000;
   padding: 40px 0 60px;
@@ -206,8 +204,10 @@ p ~ p {
   background-image: url(/images/hero.jpg);
   background-position: center top;
   background-size: cover;
+  box-sizing: border-box;
+  padding: 10vh 0 0;
   position: relative;
-  height: 100vh;
+  height: 90vh;
 } 
 .full-hero:after {
   bottom: 2vh;
@@ -251,12 +251,28 @@ p ~ p {
   text-align: center;
 }
 
-.section-callout {
+.home-callout {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
+  padding: 7vh 0;
 }
-.section-callout h2 {
+.home-callout h3 {
   color: inherit;
+  margin-top: 1em;
+}
+.callout-title {
+  flex: 1;
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+}
+.callout-copy {
+  font-size: 0.8rem;
+  flex: 0 0 50%;
+  max-width: 600px;
+  padding: 0 3vw;
 }
 
 .social-list {
@@ -292,6 +308,9 @@ p ~ p {
   margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
+}
+.bio-box > img {
+  width: 100%;
 }
 .bio-box .social-link {
   display: block;
@@ -332,16 +351,17 @@ p ~ p {
   border-left: 1px solid rgba(0,0,0,0.1);
 }
 .col-three .col-nav {
-  flex: 0 0 20em;
+  flex: 0 1 20em;
 }
 .col-three .col-content {
   flex: 1;
 }
 .col-three .col-aside {
-  flex: 0 0 20em
+  flex: 0 1 20em
 }
 
 .content {
+  margin: auto;
   max-width: 980px;
   width: 85vw;
 }
@@ -349,7 +369,7 @@ p ~ p {
   display: flex;
 }
 .col-two .col-aside {
-  flex:  0 0 20em;
+  flex:  0 1 20em;
   order: 1;
 }
 .col-two .col-content {

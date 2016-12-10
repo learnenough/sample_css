@@ -23,7 +23,9 @@ and especially whenever my hypos get such an upper hand of me, that it
 requires a strong moral principle to prevent me from deliberately stepping
 into the street, and methodically knocking people’s hats off—then, I 
 account it high time to get to sea as soon as I can. This is my substitute 
-for pistol and ball. With a philosophical flourish Cato throws himself upon 
+for pistol and ball. 
+
+With a philosophical flourish Cato throws himself upon 
 his sword; I quietly take to the ship. There is nothing surprising in this. 
 If they but knew it, almost all men in their degree, some time or other, 
 cherish very nearly the same feelings towards the ocean with me.
