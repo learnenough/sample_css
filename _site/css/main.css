@@ -46,7 +46,6 @@ a img {
 }
 /* END RESET*/
 
-
 html {
   box-shadow: 0 0 0 30px #000000 inset;
   padding: 0 30px;
@@ -58,10 +57,10 @@ body {
   min-height: 100vh;
 }
 .site-container {
-  flex: 1;
+  display: flex;
+  flex: 1 1 0;
   padding-top: 10vh;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', helvetica, sans;
   font-weight: 100;
@@ -70,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   text-align: center;
+}
+.page h1 {
+  margin-top: 2em;
 }
 h2 {
   font-size: 2em;
@@ -318,29 +320,25 @@ p ~ p {
 }
 .bio-copy {
   font-size: 0.75em;
-  font-style: italic;
 }
 
 #first-bio {
   background-color: #ccc;
 }
 
-/* PAGE STYLES */
-
 .col-three {
   display: flex;
-  min-height: 100%;
+  flex: 1 1 0;
 }
 .col {
   box-sizing: border-box;
   padding: 2em;
 }
-
 .col-three .col ~ .col {
   border-left: 1px solid rgba(0,0,0,0.1);
 }
 .col-three .col-nav {
-  flex: 0 1 20em;
+  flex: 0 1 15em;
 }
 .col-three .col-content {
   flex: 1;
@@ -477,7 +475,7 @@ p ~ p {
   margin: 2em -2% 2em 2em
 }
 .post {
-  margin: 4em auto 10em;
+  margin: 0 auto 10em;
 }
 .post .post-header, 
 .post .post-content, 
