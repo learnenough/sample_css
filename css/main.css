@@ -177,6 +177,7 @@ p ~ p {
 }
 .footer h3 {
   color: #fff;
+  font-size: 1.2em;
   padding-top: 1.5em;
   text-transform: uppercase;
 }
