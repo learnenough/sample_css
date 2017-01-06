@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Test Page: Don't panic</title>
+  
+    <title>Dangerous Blog | Test Page</title>
+  
+  
+    <meta name="description" content="A dangerous site deserves a dangerous blog.">
+  
+  <link href="/favicon.png" rel="icon">
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100,100i,300,300i" rel="stylesheet">  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/js/site.js"></script>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
   <body>
     <header class="header">
+  <label for="mobile-menu" class="show-mobile-menu">Menu</label>
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/gallery-final">Nav 3</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post 5</a></li>
+    
+      <li><a href="/2016/03/24/learn-enough-git-screencasts.html">This is the title of the post 4</a></li>
+    
+      <li><a href="/2016/03/15/learn-enough-text-editor-video-screencasts.html">This is the title of the post 3</a></li>
+    
+      <li><a href="/2016/03/03/learn-enough-command-line-video-screencasts.html">This is the title of the post 2</a></li>
+    
+      <li><a href="/2016/02/04/learn-enough-git-ebooks.html">This is the title of the post1</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2016/11/03/title-of-post.html">Newest Post</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -26,8 +51,8 @@
     <div class="site-container">
       <div class="page blog-index">
   <h1>Bloggie Blog</h1>
-  <div class="col-two">
-    <div class="col col-aside">
+  <div class="col-two blog-cols">
+    <div class="col col-aside blog-recent">
       <h4>Recent Posts</h4>
       <ul class="blog-title-list">
         
@@ -58,7 +83,7 @@
         
       </ul>
     </div>
-    <div class="col col-content">
+    <div class="col col-content blog-previews">
       
         <div class="blog-posts">
           <header class="post-header">
@@ -167,18 +192,34 @@ the spleen and regulating the circulation.</p>
     </div>
 
     <footer class="footer">
-  <a href="/">
-    <img class="footer-logo" src="/images/logo.png"/>
+  <a class="footer-logo" href="/">
+    <img src="/images/logo.png"/>
   </a>
   <nav>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/gallery-final">Nav 3</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post 5</a></li>
+    
+      <li><a href="/2016/03/24/learn-enough-git-screencasts.html">This is the title of the post 4</a></li>
+    
+      <li><a href="/2016/03/15/learn-enough-text-editor-video-screencasts.html">This is the title of the post 3</a></li>
+    
+      <li><a href="/2016/03/03/learn-enough-command-line-video-screencasts.html">This is the title of the post 2</a></li>
+    
+      <li><a href="/2016/02/04/learn-enough-git-ebooks.html">This is the title of the post1</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2016/11/03/title-of-post.html">Newest Post</a></li>
     </ul>
   </nav>
-  <h3>Learn Enough <span>to be Dangerous</span></h3>
+  <h3>Learn Enough <span>to Be Dangerous</span></h3>
 </footer>
   </body>
 </html>
