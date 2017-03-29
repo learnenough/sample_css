@@ -1,236 +1,158 @@
 <!DOCTYPE html>
 <html>
   <head>
-  
     <title>Test Page: Don't Panic</title>
-  
-  
-    <meta name="description" content="This is a dangerous site.">
-  
-  <link href="/favicon.png" rel="icon">
-  <meta charset="utf-8">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
-  <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-</head>
+    <meta charset="utf-8">
+    <style>
+      /* GLOBAL STYLES */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 7vw;
+        margin-top: 0;
+      }
+      h2 {
+      }
+      a {
+        color: #ff0000;
+      }
+
+      /* SOCIAL LINKS */
+
+      .social-link {
+        background: rgba(150,150,150,0.5);
+        color: blue;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+      }
+
+      /* HOMEPAGE STYLES */
+      .full-hero {
+        background-color: #c7dbfc;
+        height: 50vh;
+      }
+
+      .bio-wrapper {
+        font-size: 24px;
+      }
+      .bio-box {
+        border: 1px solid #000;
+        font-size: 1rem;
+        width: 50%;
+      }
+      .bio-box h3 {
+        font-size: 1.5em;
+      }
+      .bio-copy {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+      .bio-copy a {
+        color: green;
+      }
+      #first-bio {
+        background-color: #ccc;
+      }
+
+      .test-box {
+        background: #9db6dd;
+        width: 200px;
+      }
+      .test-box-nosizing {
+        border: 10px solid #000;
+        padding: 40px;
+      }
+      .test-box-sizing {
+        box-sizing: border-box;
+      }
+      
+    </style>
+  </head>
   <body>
-    <header class="header">
-  <label for="mobile-menu" class="show-mobile-menu">Menu</label>
-  <nav>
-    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
-    
-    <ul class="header-nav nav-links">
-      <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery</a></li>
-<li class="dropdown">
-  <a class="drop-trigger" href="/blog">Blog</a>
-  <ul class="drop-menu">
-    <li>Recent Posts</li>
-    
-      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post 5</a></li>
-    
-      <li><a href="/2016/03/24/learn-enough-git-screencasts.html">This is the title of the post 4</a></li>
-    
-      <li><a href="/2016/03/15/learn-enough-text-editor-video-screencasts.html">This is the title of the post 3</a></li>
-    
-      <li><a href="/2016/03/03/learn-enough-command-line-video-screencasts.html">This is the title of the post 2</a></li>
-    
-      <li><a href="/2016/02/04/learn-enough-git-ebooks.html">This is the title of the post1</a></li>
-    
-  </ul>
-</li>
-<li><a href="/2016/11/03/title-of-post.html">Newest Post</a></li>
-    </ul>
-  </nav>
-  <a href="/" class="header-logo">
-    <img src="/images/logo.png" />
-  </a>
-</header>
-    
-    <div class="site-container">
-      <div class="home">
-  <div class="full-hero hero-home">
-    <div class="hero-content">
-      <h1>CODE DANGEROUSLY</h1>
-      <ul class="social-list">
+    <div class="full-hero hero-home">
+      <h1>I'm an h1</h1>
+      <ul>
         <li>
-          <a href="http://example.com/" class="social-link" target="_blank">
-            <i class="fa fa-facebook"></i>
-          </a>
+          <a href="http://example.com/">Link</a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link" target="_blank">
-            <i class="fa fa-twitter"></i>
-          </a>
+          <a href="http://example.com/">Link</a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
+          <a href="http://example.com/">Link</a>
         </li>
       </ul>
     </div>
-  </div>
+    <h2>I'm an h2</h2>
 
-  <div class="home-callout">
-    <h1 class="callout-title">The Learn Enough Story</h1>
-    <div class="callout-copy">
-      <p>
-        Learn Enough to Be Dangerous is a leader in the movement to teach the world 
-        <em>technical sophistication</em>, which includes both "hard skills" like 
-        coding, command lines, and version control, and "soft skills" like guessing 
-        keyboard shortcuts, Googling error messages, and knowing when to just reboot 
-        the darn thing.
-      </p> 
-      <p>
-        We believe there are <strong>at least a billion people</strong> who can 
-        benefit from learning technical sophistication, probably more. To join our 
-        movement, <a href="http://learnenough.com/#email_list">sign up for our 
-        official email list</a> now.
-      </p>
-      <h3>Background</h3>
-      <p>
-        Learn Enough to Be Dangerous is an outgrowth of the 
-        <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> and the 
-        <a href="http://www.softcover.io/">Softcover publishing platform</a>. This 
-        page is part of the sample site for <a 
-        href="http://learnenough.com/css-tutorial"><em>Learn Enough CSS and Layout 
-        to Be Dangerous</em></a>, which teaches the basics of <strong>C</strong>
-        ascading <strong>S</strong>tyle <strong>S</strong>heets, the language that 
-        allows web pages to be styled. Other related tutorials can be found at 
-        <a href="http://learnenough.com/">learnenough.com</a>.
-      </p>
+    <div class="test-box">
+      200px wide
     </div>
-  </div>
-
-  <div class="home-section">
-    <h4>Most recent post</h4>
-    <div class="blog-posts">
-      <header class="post-header">
-        <h2>
-          <a href="/2016/11/03/title-of-post.html">
-          This is the title of the post 5</a>
-        </h2>
-        <div class="post-byline">
-          <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" />
-          <a href="http://twitter.com/mhartl" 
-          target="_blank" class="social-link">
-            <i class="fa fa-twitter"></i>
-          </a>
-          by: Me, Myself, and I
-          <span> - November 03, 2016</span>
-        </div>
-      </header>
-      <div class="posts-image" 
-      style="background-image:url(/images/hero.jpg)"></div>
-      <p>Call me <strong>Ishmael</strong>. Some years ago–<em>never mind how long
-precisely</em>–having little or no money in my purse, and nothing 
-particular to interest me on shore, I thought I would sail about a little 
-and see the watery part of the world. It is a way I have of driving off 
-the spleen and regulating the circulation.</p>
-
-
+    <div class="test-box test-box-nosizing">
+      200px wide + border + padding = 300px
     </div>
-  </div>
-
-  <div class="home-section">
-    <h2>THE FOUNDERS</h2>
-    <p>
-      Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee 
-      Donahoe, and Nick Merwin. We believe that the kind of technical sophistication 
-      taught by the Learn Enough tutorials can benefit at least a billion people, 
-      and probably more.
-    </p>
+    <div class="test-box test-box-nosizing test-box-sizing">
+      200px wide + border + padding + box-sizing: border-box = 200px
+    </div>
 
     <div class="bio-wrapper">
       <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400" >
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link" target="_blank">
-          <i class="fa fa-twitter"></i>
+          here
         </a>
         <div class="bio-copy">
           <p>
             Known for his dazzling charm, rapier wit, and unrivaled humility, Michael
             is the creator of the <a href="http://railstutorial.org/">Ruby on Rails
-            Tutorial</a> and principal author of the 
-            <a href="http://learnenough.com/"> Learn Enough to Be Dangerous</a> 
-            introductory sequence. 
-          </p>
-          <p>
-            Michael is also
+            Tutorial</a> and principal author of the <a href="http://learnenough.com/">
+            Learn Enough to Be Dangerous</a> introductory sequence. Michael is also
             notorious as the founder of <a href="http://tauday.com/">Tau Day</a> and
-            author of <a href="http://tauday.com/tau-manifesto"><em>The Tau 
-            Manifesto </em></a>, but rumors that he's secretly a supervillain are 
-            slightly exaggerated.
+            author of <a href="http://tauday.com/tau-manifesto"><em>The Tau Manifesto
+            </em></a>, but rumors that he's secretly a supervillain are slightly
+            exaggerated.
           </p>
         </div>
       </div>
       <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400" >
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link" target="_blank">
-          <i class="fa fa-twitter"></i>
+          here
         </a>
         <div class="bio-copy">
           <p>
-            When he's not literally swimming with sharks or hunting powder stashes 
-            on his snowboard, you can find Lee in front of his computer designing
-            interfaces, doing front-end development, or writing some of the 
-            interface-related Learn Enough tutorials.
+            When he's not literally swimming with sharks or hunting powder stashes on
+            his snowboard, you can find Lee in front of his computer designing
+            interfaces, doing front-end development, or writing some of the interface
+            -related Learn Enough tutorials.
           </p>
         </div>
       </div>
       <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400" >
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link" target="_blank">
-          <i class="fa fa-twitter"></i>
+          here
         </a>
         <div class="bio-copy">
           <p>
-            You may have seen him shredding guitar live with Capital Cities on 
-            Jimmy Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true 
-            nerd at heart. He’s just as happy shredding well-spec'd lines of code 
-            from a tour bus as he is from his kitchen table.
+            You may have seen him shredding guitar live with Capital Cities on Jimmy
+            Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
+            heart. He's just as happy shredding well-spec'd lines of code from a tour
+            bus as he is from his kitchen table.
+          </p>
+        </div>
+      </div>
+      <div class="bio-box">
+        <h3>??</h3>
+        <div class="bio-copy">
+          <p>
+            The Future
           </p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-    </div>
-
-    <footer class="footer">
-  <a class="footer-logo" href="/">
-    <img src="/images/logo.png"/>
-  </a>
-  <nav>
-    <ul class="footer-nav nav-links">
-      <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery</a></li>
-<li class="dropdown">
-  <a class="drop-trigger" href="/blog">Blog</a>
-  <ul class="drop-menu">
-    <li>Recent Posts</li>
-    
-      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post 5</a></li>
-    
-      <li><a href="/2016/03/24/learn-enough-git-screencasts.html">This is the title of the post 4</a></li>
-    
-      <li><a href="/2016/03/15/learn-enough-text-editor-video-screencasts.html">This is the title of the post 3</a></li>
-    
-      <li><a href="/2016/03/03/learn-enough-command-line-video-screencasts.html">This is the title of the post 2</a></li>
-    
-      <li><a href="/2016/02/04/learn-enough-git-ebooks.html">This is the title of the post1</a></li>
-    
-  </ul>
-</li>
-<li><a href="/2016/11/03/title-of-post.html">Newest Post</a></li>
-    </ul>
-  </nav>
-  <h3>Learn Enough <span>to Be Dangerous</span></h3>
-</footer>
   </body>
 </html>
