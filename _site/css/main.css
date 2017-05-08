@@ -101,13 +101,19 @@ a {
 
 /* HEADER */
 .header {
-  background-color: #000;
-  color: #fff;
-  position: fixed;
+  background-color: #aaa;
+  height: 300px;
+  position: relative;
   width: 100%;
-  z-index: 20;
 }
 .header-logo {
+  background-color: #000;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*.header-logo {
   background-color: #000;
   box-sizing: border-box;
   display: block;
@@ -116,7 +122,7 @@ a {
   position: relative;
   text-align: center;
   width: 10vh;
-}
+}*/
 .header-logo:hover,
 .header-logo:active {
   background-color: #ed6e2f;
@@ -133,11 +139,11 @@ a {
   margin-left: 1em;
 }
 .header-nav > li ~ li {
-  border-left: 1px solid rgba(255,255,255,0.3);
+  border-left: 1px solid rgba(0,0,0,0.3);
   padding-left: 1em;
 }
 .header-nav a {
-  color: #fff;
+  color: #000;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
