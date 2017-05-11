@@ -48,7 +48,10 @@ a img {
 
 
 /* GLOBAL STYLES */
-
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans;
 }
@@ -219,8 +222,12 @@ a {
 .bio-box h3 {
   color: #fff;
   font-size: 1.5em;
-  margin-top: -40px;
+  margin: -40px 0 1em;
   text-align: center;
+}
+.bio-box .social-link {
+  display: block;
+  margin: 2em 0 1em;
 }
 .bio-copy {
   font-size: 1em;
