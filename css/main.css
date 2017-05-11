@@ -161,6 +161,7 @@ a {
 /* FOOTER STYLES */
 .footer {
   background-color: #000;
+  margin-top: 6em;
   padding: 10vh 0 15vh;
   text-align: center;
 }
