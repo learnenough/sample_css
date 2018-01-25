@@ -11,7 +11,7 @@ function currentThumb() {
   return currentThumbDiv().querySelector("img");
 }
 
-function setGalleryInfo() {
+function setCurrentInfo() {
   let infoDiv = document.getElementById("gallery-info");
   let infoContent = `<h3>${currentThumb().dataset.title}</h3>` +
                     `<p>${currentThumb().dataset.description}</p>`
@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
   let displayImage = displayDiv.querySelector("img");
   let images       = gallery.querySelectorAll("img");
 
-  setGalleryInfo();
+  setCurrentInfo();
 
   images.forEach(function(image) {
     image.addEventListener("click", function() {
       swapImage(image, displayImage);
       setAsCurrent(image);
-      setGalleryInfo();
+      setCurrentInfo();
     });
   });
 });
