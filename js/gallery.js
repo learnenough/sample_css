@@ -1,3 +1,6 @@
+// Activates the image gallery.
+// The main task is to attach an event listener to each image in the gallery
+// and respond appropriately on click.
 function activateGallery() {
   let images = document.querySelector("#gallery").querySelectorAll("img");
   let currentDisplayImage = document.querySelector("#gallery-photo").
@@ -11,11 +14,13 @@ function activateGallery() {
   });
 }
 
+// Sets the clicked image as the current display image.
 function setAsDisplayImage(clickedImage, currentDisplayImage) {
   let newImageSrc = clickedImage.dataset.largeVersion;
   currentDisplayImage.setAttribute("src", newImageSrc);
 }
 
+// Sets the given image as "current".
 function setAsCurrent(image) {
   let currentThumb = document.querySelector(".current").querySelector("img");
   currentThumb.parentNode.classList.remove("current");
@@ -23,6 +28,7 @@ function setAsCurrent(image) {
   setInfo(image);
 }
 
+// Sets the image information in the sidebar.
 function setInfo(image) {
   let galleryInfo = document.querySelector("#gallery-info");
   let title       = galleryInfo.querySelector("#title");
