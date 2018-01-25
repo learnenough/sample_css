@@ -1,44 +1,38 @@
-function swapImage(clickedImage, displayImage) {
-  newImageSrc = clickedImage.dataset.largeVersion;
-  displayImage.setAttribute("src", newImageSrc);
-}
-
-function currentThumbDiv() {
-  return document.querySelector(".current");
-}
-
-function currentThumb() {
-  return currentThumbDiv().querySelector("img");
-}
-
-function setCurrentInfo() {
-  let infoDiv = document.getElementById("gallery-info");
-  let infoContent = `<h3>${currentThumb().dataset.title}</h3>` +
-                    `<p>${currentThumb().dataset.description}</p>`
-  infoDiv.innerHTML = infoContent;
-}
-
-function setAsCurrent(image) {
-  currentThumbDiv().classList.remove("current");
-  image.parentNode.classList.add("current");
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  let gallery      = document.getElementById("gallery");
-  let displayDiv   = document.getElementById("gallery-photo");
-  let displayImage = displayDiv.querySelector("img");
-  let images       = gallery.querySelectorAll("img");
-
-  setCurrentInfo();
+function activateGallery() {
+  let images = document.querySelector("#gallery").querySelectorAll("img");
+  let currentDisplayImage = document.querySelector("#gallery-photo").
+                                     querySelector("img");
 
   images.forEach(function(image) {
     image.addEventListener("click", function() {
-      swapImage(image, displayImage);
+      setAsDisplayImage(image, currentDisplayImage);
       setAsCurrent(image);
-      setCurrentInfo();
     });
   });
-});
+}
+
+function setAsDisplayImage(clickedImage, currentDisplayImage) {
+  let newImageSrc = clickedImage.dataset.largeVersion;
+  currentDisplayImage.setAttribute("src", newImageSrc);
+}
+
+function setAsCurrent(image) {
+  let currentThumb = document.querySelector(".current").querySelector("img");
+  currentThumb.parentNode.classList.remove("current");
+  image.parentNode.classList.add("current");
+  setInfo(image);
+}
+
+function setInfo(image) {
+  let galleryInfo = document.querySelector("#gallery-info");
+  let title       = galleryInfo.querySelector("#title");
+  let description = galleryInfo.querySelector("#description");
+
+  title.innerHTML       = image.dataset.title;
+  description.innerHTML = image.dataset.description;
+}
+
+
 
 // $(document).ready(function() {
 
