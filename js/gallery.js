@@ -10,22 +10,21 @@ function activateGallery() {
     image.addEventListener("click", function() {
       setAsDisplayImage(image, currentDisplayImage);
       setAsCurrent(image);
+      setInfo(image);
     });
   });
 }
 
 // Sets the clicked image as the current display image.
-function setAsDisplayImage(clickedImage, currentDisplayImage) {
-  let newImageSrc = clickedImage.dataset.largeVersion;
+function setAsDisplayImage(image, currentDisplayImage) {
+  let newImageSrc = image.dataset.largeVersion;
   currentDisplayImage.setAttribute("src", newImageSrc);
 }
 
 // Sets the given image as "current".
 function setAsCurrent(image) {
-  let currentThumb = document.querySelector(".current").querySelector("img");
-  currentThumb.parentNode.classList.remove("current");
+  document.querySelector(".current").classList.remove("current");
   image.parentNode.classList.add("current");
-  setInfo(image);
 }
 
 // Sets the image information in the sidebar.
